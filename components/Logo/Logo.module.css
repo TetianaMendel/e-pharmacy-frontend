@@ -1,0 +1,36 @@
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+}
+
+.icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.light {
+    color: var(--color-white);
+}
+
+.dark {
+    color: var(--color-black);
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        gap: 14px;
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 44px;
+        height: 44px;
+    }
+}

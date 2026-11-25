@@ -1,0 +1,111 @@
+.header {
+    padding: 25px 0;
+    background-color: var(--color-bg);
+}
+
+.homeHeader {
+    background-color: var(--color-green);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 26px;
+    color: var(--color-green);
+    flex-shrink: 0;
+}
+
+.homeHeader .menuButton {
+    color: var(--color-white);
+}
+
+.menuIcon {
+    width: 32px;
+    height: 26px;
+}
+
+.homeHeader .menuButton:focus-visible {
+    outline-color: var(--color-white);
+}
+
+.authLinks {
+    display: none;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 28px 0;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+
+    .wrapper> :first-child {
+        justify-self: start;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .authLinks {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+        gap: 14px;
+    }
+
+    .registerLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 119px;
+        height: 46px;
+        border: 1px solid var(--color-green);
+        border-radius: 60px;
+        color: var(--color-green);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .loginLink {
+        color: var(--color-green);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    .homeHeader .registerLink {
+        border-color: var(--color-light-gray-50);
+        color: var(--color-light-gray);
+    }
+
+    .homeHeader .loginLink {
+        color: var(--color-light-gray);
+    }
+
+    .homeHeader .registerLink:focus-visible,
+    .homeHeader .loginLink:focus-visible {
+        outline-color: var(--color-white);
+    }
+}

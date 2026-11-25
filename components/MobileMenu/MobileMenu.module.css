@@ -1,0 +1,92 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: var(--color-black-45);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 210px;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 31px 20px 40px;
+    background-color: var(--color-green);
+    overflow-y: auto;
+}
+
+.closeButton {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color: var(--color-white);
+}
+
+.navigation {
+    margin-top: 197px;
+}
+
+.authLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.registerLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 119px;
+    height: 40px;
+    border: 1px solid var(--color-light-gray-50);
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-light-gray);
+}
+
+.loginLink {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-light-gray);
+}
+
+.closeButton:focus-visible,
+.registerLink:focus-visible,
+.loginLink:focus-visible {
+    outline-color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        width: 334px;
+        padding: 39px 32px 64px;
+    }
+
+    .navigation {
+        margin-top: 279px;
+    }
+
+    .authLinks {
+        flex-direction: row;
+    }
+
+    .registerLink {
+        height: 46px;
+    }
+}
