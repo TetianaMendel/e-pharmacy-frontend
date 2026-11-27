@@ -1,7 +1,5 @@
+import MainBanner from "@/components/MainBanner/MainBanner";
+
 export default function Home() {
-  return (
-    <main>
-      <h1>E-Pharmacy</h1>
-    </main>
-  );
+  return <MainBanner />;
 }
