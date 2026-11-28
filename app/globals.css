@@ -16,6 +16,8 @@
   --color-purple: #9747ff;
   --color-pale-green: #e7f1ed;
   --color-off-white: #f7f7f7;
+  --color-card-bg: #fdfdfd;
+  --color-pale-green-40: rgba(231, 241, 237, 0.4);
 
   /* Black with opacity */
   --color-black-5: rgba(29, 30, 33, 0.05);

@@ -1,0 +1,120 @@
+.section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    min-height: 126px;
+    padding: 14px 18px;
+    border-radius: 27px;
+    background-color: var(--color-card-bg);
+    box-shadow:
+        inset 0 0 0 1.15px var(--color-light-gray),
+        0 -1px 14px 0 rgba(29, 30, 33, 0.02);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 13.86px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: var(--color-pale-green-40);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-green);
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-dark);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 79px auto;
+    align-items: end;
+    justify-content: start;
+}
+
+.value {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--color-dark);
+}
+
+.link {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-gray);
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding-top: 64px;
+        padding-bottom: 120px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 670px;
+        gap: 28px;
+        margin: 0 auto;
+    }
+
+    .card {
+        height: 167px;
+    }
+
+    .number {
+        width: 74px;
+        height: 74px;
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .content {
+        grid-template-columns: auto auto;
+        gap: 28px;
+        align-items: baseline;
+    }
+
+    .value {
+        font-size: 36px;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .list {
+        max-width: 1019px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
